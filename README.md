@@ -8,3 +8,5 @@ The picture：
 The Gif effect：
 
 <img src="https://raw.githubusercontent.com/fanrunqi/MaterialLogin/master/screenshots/a.gif" width = "384" height = "702"  />
+
+> 有需要用到的，请直接下载源码，谢谢！
