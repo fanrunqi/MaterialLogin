@@ -9,4 +9,4 @@ The Gif effect：
 
 <img src="https://raw.githubusercontent.com/fanrunqi/MaterialLogin/master/screenshots/a.gif" width = "384" height = "702"  />
 
-> 有需要用到的，请直接下载源码，谢谢！
+> 有需要的，请直接下载源码。有问题可以给我留言，谢谢！
