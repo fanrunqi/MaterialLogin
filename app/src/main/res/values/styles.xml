@@ -9,4 +9,10 @@
         <!-- set Can use Activity transitions -->
         <item name="android:windowContentTransitions">true</item>
     </style>
+    <style name="Translucent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">#0288D1</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+    </style>
 </resources>

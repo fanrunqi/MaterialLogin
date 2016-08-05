@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
                 break;
             case R.id.bt_go:
                 Explode explode = new Explode();
-                explode.setDuration(1000);
+                explode.setDuration(500);
 
                 getWindow().setExitTransition(explode);
                 getWindow().setEnterTransition(explode);

@@ -4,29 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/bg"
     tools:context="cn.fanrunqi.materiallogin.MainActivity">
 
     <FrameLayout
         android:layout_centerInParent="true"
+        android:paddingTop="70dp"
         android:layout_width="320dp"
-        android:layout_height="320dp">
-
-        <android.support.v7.widget.CardView
-            android:layout_gravity="center_horizontal"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            app:cardCornerRadius="6dp"
-            app:cardElevation="3dp"
-            app:cardUseCompatPadding="true"
-            />
+        android:layout_height="390dp">
         <android.support.v7.widget.CardView
             android:id="@+id/cv_add"
             app:cardBackgroundColor="#2ea67f"
             android:layout_marginTop="10dp"
             android:layout_gravity="center_horizontal"
-            android:layout_width="320dp"
-            android:layout_height="300dp"
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
             app:cardCornerRadius="6dp"
             app:cardElevation="3dp"
             app:cardUseCompatPadding="true"
@@ -119,7 +110,7 @@
                    </android.support.design.widget.TextInputLayout>
                </LinearLayout>
                <Button
-                   android:layout_marginTop="10dp"
+                   android:layout_marginTop="20dp"
                    android:layout_gravity="center_horizontal"
                    android:id="@+id/bt_go"
                    android:background="@drawable/bt_shape_2"
