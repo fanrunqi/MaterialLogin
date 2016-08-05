@@ -31,25 +31,25 @@
                    android:layout_marginTop="50dp"
                    android:layout_width="wrap_content"
                    android:layout_height="wrap_content"
-                   android:layout_marginLeft="50dp"
-                   android:text="REGISTER"
+                   android:layout_marginStart="50dp"
+                   android:text="@string/register"
                    android:textColor="#fff"
                    android:textSize="16sp"
                    android:textStyle="bold"
                    />
                <LinearLayout
                    android:layout_marginTop="10dp"
-                   android:paddingLeft="50dp"
-                   android:paddingRight="30dp"
+                   android:paddingStart="50dp"
+                   android:paddingEnd="30dp"
                    android:layout_width="match_parent"
                    android:layout_height="40dp">
                    <android.support.design.widget.TextInputLayout
-                       android:hint="Username"
                        android:textColorHint="#f0f7f4"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content">
                        <EditText
                            android:textSize="13sp"
+                           android:hint="@string/Username"
                            android:textColor="#f0f7f4"
                            android:id="@+id/et_username"
                            android:layout_width="match_parent"
@@ -62,18 +62,19 @@
                    </android.support.design.widget.TextInputLayout>
                </LinearLayout>
                <LinearLayout
-                   android:paddingLeft="50dp"
-                   android:paddingRight="30dp"
+                   android:paddingStart="50dp"
+                   android:paddingEnd="30dp"
                    android:orientation="horizontal"
                    android:layout_width="match_parent"
                    android:layout_height="40dp">
                    <android.support.design.widget.TextInputLayout
-                       android:hint="Password"
+
                        android:textColorHint="#f0f7f4"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content">
                        <EditText
                            android:textSize="13sp"
+                           android:hint="@string/Password"
                            android:textColor="#f0f7f4"
                            android:id="@+id/et_password"
                            android:layout_width="match_parent"
@@ -86,19 +87,20 @@
                    </android.support.design.widget.TextInputLayout>
                </LinearLayout>
                <LinearLayout
-                   android:paddingLeft="50dp"
-                   android:paddingRight="30dp"
+                   android:paddingStart="50dp"
+                   android:paddingEnd="30dp"
                    android:orientation="horizontal"
                    android:layout_width="match_parent"
                    android:layout_height="40dp">
                    <android.support.design.widget.TextInputLayout
-                       android:hint="Repeat Password"
+
                        android:textColorHint="#f0f7f4"
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content">
                        <EditText
                            android:textSize="13sp"
                            android:textColor="#f0f7f4"
+                           android:hint="@string/repeat_password"
                            android:id="@+id/et_repeatpassword"
                            android:layout_width="match_parent"
                            android:layout_height="wrap_content"
@@ -117,7 +119,7 @@
                    android:stateListAnimator="@drawable/state_list_animator_z"
                    android:layout_width="150dp"
                    android:layout_height="50dp"
-                   android:text="NEXT"
+                   android:text="@string/next"
                    android:textColor="#2fa881"
                    >
                </Button>
