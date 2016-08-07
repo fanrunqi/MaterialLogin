@@ -10,7 +10,7 @@ The Animation effect：
 <img src="https://raw.githubusercontent.com/fanrunqi/MaterialLogin/master/screenshots/this.gif" width = "363" height = "640"  />
 
 
-> 有需要的，请直接下载源码。有问题可以给我留言，谢谢！
+> You can download the source code. Problems can give me a message, thank you!
 
 # License
 > Copyright 2016 fanrunqi
