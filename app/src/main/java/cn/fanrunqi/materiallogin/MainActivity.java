@@ -2,7 +2,6 @@ package cn.fanrunqi.materiallogin;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityOptionsCompat;
@@ -13,56 +12,64 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-import butterknife.ButterKnife;
-import butterknife.InjectView;
-import butterknife.OnClick;
-
 public class MainActivity extends AppCompatActivity {
 
-    @InjectView(R.id.et_username)
-    EditText etUsername;
-    @InjectView(R.id.et_password)
-    EditText etPassword;
-    @InjectView(R.id.bt_go)
-    Button btGo;
-    @InjectView(R.id.cv)
-    CardView cv;
-    @InjectView(R.id.fab)
-    FloatingActionButton fab;
+    private EditText etUsername;
+    private EditText etPassword;
+    private Button btGo;
+    private CardView cv;
+    private FloatingActionButton fab;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ButterKnife.inject(this);
-
+        initView();
+        setListener();
     }
 
-    @OnClick({R.id.bt_go, R.id.fab})
-    public void onClick(View view) {
-        switch (view.getId()) {
-            case R.id.fab:
-                getWindow().setExitTransition(null);
-                getWindow().setEnterTransition(null);
+    private void initView() {
+        etUsername = findViewById(R.id.et_username);
+        etPassword = findViewById(R.id.et_password);
+        btGo = findViewById(R.id.bt_go);
+        cv = findViewById(R.id.cv);
+        fab = findViewById(R.id.fab);
+    }
 
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    ActivityOptions options =
-                            ActivityOptions.makeSceneTransitionAnimation(this, fab, fab.getTransitionName());
-                    startActivity(new Intent(this, RegisterActivity.class), options.toBundle());
-                } else {
-                    startActivity(new Intent(this, RegisterActivity.class));
-                }
-                break;
-            case R.id.bt_go:
+    private void setListener() {
+        btGo.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
                 Explode explode = new Explode();
                 explode.setDuration(500);
 
                 getWindow().setExitTransition(explode);
                 getWindow().setEnterTransition(explode);
-                ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(this);
-                Intent i2 = new Intent(this,LoginSuccessActivity.class);
+                ActivityOptionsCompat oc2 = ActivityOptionsCompat.makeSceneTransitionAnimation(MainActivity.this);
+                Intent i2 = new Intent(MainActivity.this,LoginSuccessActivity.class);
                 startActivity(i2, oc2.toBundle());
-                break;
-        }
+            }
+        });
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getWindow().setExitTransition(null);
+                getWindow().setEnterTransition(null);
+                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, fab, fab.getTransitionName());
+                startActivity(new Intent(MainActivity.this, RegisterActivity.class), options.toBundle());
+            }
+        });
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        fab.setVisibility(View.GONE);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        fab.setVisibility(View.VISIBLE);
     }
 }

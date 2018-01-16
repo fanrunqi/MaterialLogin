@@ -2,8 +2,6 @@ package cn.fanrunqi.materiallogin;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
-import android.graphics.Color;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
@@ -14,31 +12,28 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.animation.AccelerateInterpolator;
 
-import butterknife.ButterKnife;
-import butterknife.InjectView;
-
 public class RegisterActivity extends AppCompatActivity {
 
-    @InjectView(R.id.fab)
-    FloatingActionButton fab;
-    @InjectView(R.id.cv_add)
-    CardView cvAdd;
+    private FloatingActionButton fab;
+    private CardView cvAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
-        ButterKnife.inject(this);
-
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            ShowEnterAnimation();
-        }
+        ShowEnterAnimation();
+        initView();
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 animateRevealClose();
             }
         });
+    }
+
+    private void initView() {
+        fab = findViewById(R.id.fab);
+        cvAdd = findViewById(R.id.cv_add);
     }
 
     private void ShowEnterAnimation() {
