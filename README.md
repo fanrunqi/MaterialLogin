@@ -1,13 +1,9 @@
 # MaterialLogin
 
-The picture：
-
-<img src="https://raw.githubusercontent.com/fanrunqi/MaterialLogin/master/screenshots/b.png" width = "192" height = "350"  />
-<img src="https://raw.githubusercontent.com/fanrunqi/MaterialLogin/master/screenshots/c.png" width = "192" height = "350"  />
 
 The Animation effect：
 
-<img src="https://raw.githubusercontent.com/fanrunqi/MaterialLogin/master/screenshots/this.gif" width = "181" height = "320"  />
+<img src="https://raw.githubusercontent.com/fanrunqi/MaterialLogin/master/screenshots/this.gif" width = "362" height = "640"  />
 
 
 > You can download the source code. Problems can give me a message, thank you!
