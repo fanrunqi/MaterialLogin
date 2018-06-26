@@ -3,7 +3,7 @@
 
 The Animation effect：
 
-<img src="https://raw.githubusercontent.com/fanrunqi/MaterialLogin/master/screenshots/this.gif" width = "362" height = "640"  />
+<img src="https://raw.githubusercontent.com/fanrunqi/MaterialLogin/master/screenshots/a.gif" width = "270" height = "540"  />
 
 
 > You can download the source code. Problems can give me a message, thank you!
