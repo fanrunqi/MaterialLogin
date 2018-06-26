@@ -15,9 +15,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegisterActivity"
+
+        <activity android:name=".a.AActivityOne"/>
+        <activity
+            android:name=".a.AActivityTwo"
             android:theme="@style/Translucent" />
-        <activity android:name=".LoginSuccessActivity"></activity>
+        <activity android:name=".a.AActivityThree" />
+
     </application>
 
 </manifest>

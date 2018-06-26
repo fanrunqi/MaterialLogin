@@ -1,4 +1,4 @@
-package cn.fanrunqi.materiallogin;
+package cn.fanrunqi.materiallogin.a;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -12,7 +12,9 @@ import android.view.View;
 import android.view.ViewAnimationUtils;
 import android.view.animation.AccelerateInterpolator;
 
-public class RegisterActivity extends AppCompatActivity {
+import cn.fanrunqi.materiallogin.R;
+
+public class AActivityTwo extends AppCompatActivity {
 
     private FloatingActionButton fab;
     private CardView cvAdd;
@@ -20,7 +22,7 @@ public class RegisterActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_register);
+        setContentView(R.layout.a_activity_two);
         ShowEnterAnimation();
         initView();
         fab.setOnClickListener(new View.OnClickListener() {
@@ -100,7 +102,7 @@ public class RegisterActivity extends AppCompatActivity {
                 cvAdd.setVisibility(View.INVISIBLE);
                 super.onAnimationEnd(animation);
                 fab.setImageResource(R.drawable.plus);
-                RegisterActivity.super.onBackPressed();
+                AActivityTwo.super.onBackPressed();
             }
 
             @Override

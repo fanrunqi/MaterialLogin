@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cn.fanrunqi.materiallogin.MainActivity">
+    tools:context="cn.fanrunqi.materiallogin.a.AActivityOne">
 
     <FrameLayout
         android:layout_centerInParent="true"
@@ -49,7 +49,7 @@
                        android:theme="@style/TextLabel"
                        android:layout_height="wrap_content">
                        <EditText
-                           android:textSize="13sp"
+                           android:textSize="16sp"
                            android:hint="@string/Username"
                            android:textColor="#f0f7f4"
                            android:id="@+id/et_username"
@@ -75,7 +75,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content">
                        <EditText
-                           android:textSize="13sp"
+                           android:textSize="16sp"
                            android:hint="@string/Password"
                            android:textColor="#f0f7f4"
                            android:id="@+id/et_password"
@@ -101,7 +101,7 @@
                        android:layout_width="match_parent"
                        android:layout_height="wrap_content">
                        <EditText
-                           android:textSize="13sp"
+                           android:textSize="16sp"
                            android:textColor="#f0f7f4"
                            android:hint="@string/repeat_password"
                            android:id="@+id/et_repeatpassword"

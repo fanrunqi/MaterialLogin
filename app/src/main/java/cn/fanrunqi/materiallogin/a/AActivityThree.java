@@ -1,15 +1,17 @@
-package cn.fanrunqi.materiallogin;
+package cn.fanrunqi.materiallogin.a;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.transition.Explode;
 
-public class LoginSuccessActivity extends AppCompatActivity {
+import cn.fanrunqi.materiallogin.R;
+
+public class AActivityThree extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login_success);
+        setContentView(R.layout.a_activity_three);
 
         Explode explode = new Explode();
         explode.setDuration(500);

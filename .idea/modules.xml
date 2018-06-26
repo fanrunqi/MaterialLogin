@@ -3,9 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/MaterialLogin.iml" filepath="$PROJECT_DIR$/MaterialLogin.iml" />
-      <module fileurl="file://C:\Users\manpe\Desktop\1\MaterialLogin\MaterialLogin.iml" filepath="C:\Users\manpe\Desktop\1\MaterialLogin\MaterialLogin.iml" />
+      <module fileurl="file://C:/Users/manpe/Desktop/1/MaterialLogin/MaterialLogin.iml" filepath="C:/Users/manpe/Desktop/1/MaterialLogin/MaterialLogin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MaterialLogin.iml" filepath="$PROJECT_DIR$/MaterialLogin.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://C:\Users\manpe\Desktop\1\MaterialLogin\app\app.iml" filepath="C:\Users\manpe\Desktop\1\MaterialLogin\app\app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:/Users/manpe/Desktop/1/MaterialLogin/app/app.iml" filepath="C:/Users/manpe/Desktop/1/MaterialLogin/app/app.iml" />
     </modules>
   </component>
 </project>
