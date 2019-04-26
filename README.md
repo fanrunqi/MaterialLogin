@@ -1,4 +1,4 @@
-# MaterialLogin
+# MaterialLogin([Worth collecting Android scan code library](https://github.com/fanrunqi/ZxingView))
 
 
 The Animation effect：
